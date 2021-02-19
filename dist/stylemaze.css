@@ -1,0 +1,311 @@
+header {
+  display: flex;
+  grid-area: header;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c3c3c;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 80px;
+}
+
+#tv-logo {
+  padding: 5px 5px;
+  width: 150px;
+  display: inline;
+}
+
+.search-area {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  max-width: 500px;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  outline-style: none;
+  border: none;
+  border-radius: 20px 0 0 20px;
+}
+
+.top-link {
+  display: flex;
+}
+
+::placeholder {
+  padding-left: 10px;
+  color: #cac7c7;
+  opacity: 1;
+}
+
+.search-btn {
+  padding: 0;
+  margin: -4px;
+  height: 40px;
+  display: inline;
+  outline-style: none;
+  border-radius: 0 20px 20px 0;
+  color: white;
+  border: none;
+  background-color: #3C948B;
+}
+
+.search-btn:hover {
+  background-color: #a2d3d4;
+}
+
+.log-link {
+  margin-left: auto;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.log-link:hover {
+  text-decoration: none;
+  color: #3C948B;
+}
+
+.icon-search {
+  display: inline;
+  padding: 10px 30px;
+}
+
+footer {
+  grid-area: footer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #a4a4a4;
+  padding-top: 20px;
+}
+footer a {
+  text-decoration: none;
+}
+footer span {
+  display: inline;
+  margin-left: 70px;
+  font-size: 20px;
+}
+footer .footer-left {
+  flex: 1;
+}
+footer .footer-right {
+  flex: 1;
+}
+
+.icon {
+  font-size: 120%;
+  margin: 2px;
+  text-decoration: none;
+}
+
+.icon-reddit {
+  color: red;
+  text-decoration: none;
+}
+.icon-reddit:hover {
+  color: #ee8080;
+}
+
+.icon-instagram {
+  color: #e220d8;
+  text-decoration: none;
+}
+.icon-instagram:hover {
+  color: #d670d1;
+}
+
+.icon-facebook {
+  color: blue;
+  text-decoration: none;
+}
+.icon-facebook:hover {
+  color: lightblue;
+}
+
+.icon-twitter {
+  color: #6060e7;
+  text-decoration: none;
+}
+.icon-twitter:hover {
+  color: #8484e2;
+}
+
+#first {
+  padding-right: 25px;
+  text-align: right;
+}
+
+#first > a {
+  font-size: 18px;
+  margin: 10px;
+  padding-bottom: 20px;
+  color: #3C948B;
+}
+
+#second {
+  padding-right: 25px;
+  text-align: right;
+}
+
+#second > a {
+  font-size: 14px;
+  margin: 10px;
+  padding-bottom: 20px;
+  color: #3C948B;
+}
+
+.credits {
+  display: inline;
+  color: #3C948B;
+  font-size: 14px;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #3C948B;
+  right: 0;
+  left: 0;
+  height: 50px;
+  align-items: center;
+  margin-top: 0;
+}
+
+.menu > li {
+  display: inline-block;
+  padding: 16px;
+}
+.menu > li:hover {
+  background-color: #3c3c3c;
+}
+.menu > li a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.show {
+  margin: 10px;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas: "thumbnail" "title" "footer";
+  background-color: #3C948B;
+  justify-content: center;
+  text-align: center;
+}
+.show img {
+  width: 100%;
+}
+.show a {
+  grid-area: thumbnail;
+  text-decoration: none;
+  color: #c6d1d1;
+}
+.show h3 {
+  font-size: 95%;
+  grid-area: title;
+  font-weight: normal;
+  color: #c6d1d1;
+}
+.show h2 {
+  grid-area: second-title;
+  font-size: 95%;
+  color: #c6d1d1;
+}
+.show .item-footer {
+  grid-area: footer;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  padding: 5px;
+  margin-top: 5px;
+}
+.show .item-footer .heart, .show .item-footer .rate {
+  flex: 1;
+  font-size: 120%;
+  color: #c6d1d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.application {
+  display: grid;
+  grid-template-areas: "header header" "menu menu" "headliner headliner" "main main" "footer footer";
+}
+
+main {
+  grid-area: main;
+  max-width: 80%;
+  display: relative;
+  padding: 10px 80px;
+}
+main h1 {
+  grid-area: headliner;
+  height: 50px;
+  display: block;
+  padding-left: 10px;
+}
+
+.shows {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main h1 {
+  display: block;
+}
+
+main p {
+  position: relative;
+  padding: 0;
+  margin-right: 200px;
+  display: inline-block;
+}
+
+main > .sideForm {
+  top: 300px;
+  line-height: 2em;
+  right: 50px;
+  position: absolute;
+  display: inline;
+}
+
+select {
+  height: 30px;
+  width: 150px;
+}
+
+.sideForm {
+  text-align: center;
+}
+
+@media all and (max-width: 600px) {
+  main > .sideForm {
+    display: none;
+  }
+
+  .shows .show {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=stylemaze.css.map */
